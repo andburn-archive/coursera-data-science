@@ -30,26 +30,32 @@ mergeData <- function() {
   features = read.table("data/UCI HAR Dataset/features.txt", stringsAsFactors=FALSE)
   labels = read.table("data/UCI HAR Dataset/activity_labels.txt", stringsAsFactors=FALSE)
   
+  # add subjects first than merge whole, then add activities merge
+  
   test_data = read.table("data/UCI HAR Dataset/test/X_test.txt")
   test_labels = read.table("data/UCI HAR Dataset/test/y_test.txt")
   test_subjects = read.table("data/UCI HAR Dataset/test/subject_test.txt")
   
-  test_activities = merge(test_labels, labels, by.x="V1", by.y="V1", sort=FALSE)
-  
+  # add subject column  
   test_data$subject <- test_subjects[[1]]
-  test_data$activity <- test_activities[[2]]
+  # add activity id column
+  test_data$activityid <- test_labels[[1]]
   
   train_data = read.table("data/UCI HAR Dataset/train/X_train.txt")
   train_labels = read.table("data/UCI HAR Dataset/train/y_train.txt")
   train_subjects = read.table("data/UCI HAR Dataset/train/subject_train.txt")
   
-  train_activities = merge(train_labels, labels, by.x="V1", by.y="V1", sort=FALSE)
-  
+  # add subject column  
   train_data$subject <- train_subjects[[1]]
-  train_data$activity <- train_activities[[2]]
+  # add activity id column
+  train_data$activityid <- train_labels[[1]]
   
   mdata <- rbind(train_data, test_data)
-  names(mdata) <- c(features[[2]], "subject", "activity")
+  
+  mdata <- merge(mdata, labels, by.x="activityid", by.y="V1")
+  
+  #names(mdata) <- c(features[[2]], "subject", "activityid", "activity")
+  #table(md$subject, md$V2.y)
   mdata
 }
 
