@@ -1,0 +1,143 @@
+# Codebook For
+## Wearable Computing Tidy Dataset (*tidydata.csv*)
+
+- **subject**
+	- This is the id of the subject who performed the activity. They range from 1 to 30.
+- **activity**
+	- This is the textual description of a particular activity during whcih measurements were taken.
+	- The possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+- **activityid**
+	- This is the numeric id relating to a particular activity during whcih measurements were taken.
+	- The possible values are 1=WALKING, 2=WALKING_UPSTAIRS, 3=WALKING_DOWNSTAIRS, 4=SITTING, 5=STANDING, 6=LAYING.
+- **tbodyacc_x.axis_mean**
+	- The mean of the measurements of tbodyacc on the x-axis
+- **tbodyacc_y.axis_mean**
+	- The mean of the measurements of tbodyacc on the y-axis
+- **tbodyacc_z.axis_mean**
+	- The mean of the measurements of tbodyacc on the z-axis
+- **tbodyacc_x.axis_std**
+	- The standard deviation of the measurements of tbodyacc on the x-axis
+- **tbodyacc_y.axis_std**
+	- The standard deviation of the measurements of tbodyacc on the y-axis
+- **tbodyacc_z.axis_std**
+	- The standard deviation of the measurements of tbodyacc on the z-axis
+- **tgravityacc_x.axis_mean**
+	- The mean of the measurements of tgravityacc on the x-axis
+- **tgravityacc_y.axis_mean**
+	- The mean of the measurements of tgravityacc on the y-axis
+- **tgravityacc_z.axis_mean**
+	- The mean of the measurements of tgravityacc on the z-axis
+- **tgravityacc_x.axis_std**
+	- The standard deviation of the measurements of tgravityacc on the x-axis
+- **tgravityacc_y.axis_std**
+	- The standard deviation of the measurements of tgravityacc on the y-axis
+- **tgravityacc_z.axis_std**
+	- The standard deviation of the measurements of tgravityacc on the z-axis
+- **tbodyaccjerk_x.axis_mean**
+	- The mean of the measurements of tbodyaccjerk on the x-axis
+- **tbodyaccjerk_y.axis_mean**
+	- The mean of the measurements of tbodyaccjerk on the y-axis
+- **tbodyaccjerk_z.axis_mean**
+	- The mean of the measurements of tbodyaccjerk on the z-axis
+- **tbodyaccjerk_x.axis_std**
+	- The standard deviation of the measurements of tbodyaccjerk on the x-axis
+- **tbodyaccjerk_y.axis_std**
+	- The standard deviation of the measurements of tbodyaccjerk on the y-axis
+- **tbodyaccjerk_z.axis_std**
+	- The standard deviation of the measurements of tbodyaccjerk on the z-axis
+- **tbodygyro_x.axis_mean**
+	- The mean of the measurements of tbodygyro on the x-axis
+- **tbodygyro_y.axis_mean**
+	- The mean of the measurements of tbodygyro on the y-axis
+- **tbodygyro_z.axis_mean**
+	- The mean of the measurements of tbodygyro on the z-axis
+- **tbodygyro_x.axis_std**
+	- The standard deviation of the measurements of tbodygyro on the x-axis
+- **tbodygyro_y.axis_std**
+	- The standard deviation of the measurements of tbodygyro on the y-axis
+- **tbodygyro_z.axis_std**
+	- The standard deviation of the measurements of tbodygyro on the z-axis
+- **tbodygyrojerk_x.axis_mean**
+	- The mean of the measurements of tbodygyrojerk on the x-axis
+- **tbodygyrojerk_y.axis_mean**
+	- The mean of the measurements of tbodygyrojerk on the y-axis
+- **tbodygyrojerk_z.axis_mean**
+	- The mean of the measurements of tbodygyrojerk on the z-axis
+- **tbodygyrojerk_x.axis_std**
+	- The standard deviation of the measurements of tbodygyrojerk on the x-axis
+- **tbodygyrojerk_y.axis_std**
+	- The standard deviation of the measurements of tbodygyrojerk on the y-axis
+- **tbodygyrojerk_z.axis_std**
+	- The standard deviation of the measurements of tbodygyrojerk on the z-axis
+- **tbodyaccmag_mean**
+	- The mean of the measurements of tbodyaccmag
+- **tbodyaccmag_std**
+	- The standard deviation of the measurements of tbodyaccmag
+- **tgravityaccmag_mean**
+	- The mean of the measurements of tgravityaccmag
+- **tgravityaccmag_std**
+	- The standard deviation of the measurements of tgravityaccmag
+- **tbodyaccjerkmag_mean**
+	- The mean of the measurements of tbodyaccjerkmag
+- **tbodyaccjerkmag_std**
+	- The standard deviation of the measurements of tbodyaccjerkmag
+- **tbodygyromag_mean**
+	- The mean of the measurements of tbodygyromag
+- **tbodygyromag_std**
+	- The standard deviation of the measurements of tbodygyromag
+- **tbodygyrojerkmag_mean**
+	- The mean of the measurements of tbodygyrojerkmag
+- **tbodygyrojerkmag_std**
+	- The standard deviation of the measurements of tbodygyrojerkmag
+- **fbodyacc_x.axis_mean**
+	- The mean of the measurements of fbodyacc on the x-axis
+- **fbodyacc_y.axis_mean**
+	- The mean of the measurements of fbodyacc on the y-axis
+- **fbodyacc_z.axis_mean**
+	- The mean of the measurements of fbodyacc on the z-axis
+- **fbodyacc_x.axis_std**
+	- The standard deviation of the measurements of fbodyacc on the x-axis
+- **fbodyacc_y.axis_std**
+	- The standard deviation of the measurements of fbodyacc on the y-axis
+- **fbodyacc_z.axis_std**
+	- The standard deviation of the measurements of fbodyacc on the z-axis
+- **fbodyaccjerk_x.axis_mean**
+	- The mean of the measurements of fbodyaccjerk on the x-axis
+- **fbodyaccjerk_y.axis_mean**
+	- The mean of the measurements of fbodyaccjerk on the y-axis
+- **fbodyaccjerk_z.axis_mean**
+	- The mean of the measurements of fbodyaccjerk on the z-axis
+- **fbodyaccjerk_x.axis_std**
+	- The standard deviation of the measurements of fbodyaccjerk on the x-axis
+- **fbodyaccjerk_y.axis_std**
+	- The standard deviation of the measurements of fbodyaccjerk on the y-axis
+- **fbodyaccjerk_z.axis_std**
+	- The standard deviation of the measurements of fbodyaccjerk on the z-axis
+- **fbodygyro_x.axis_mean**
+	- The mean of the measurements of fbodygyro on the x-axis
+- **fbodygyro_y.axis_mean**
+	- The mean of the measurements of fbodygyro on the y-axis
+- **fbodygyro_z.axis_mean**
+	- The mean of the measurements of fbodygyro on the z-axis
+- **fbodygyro_x.axis_std**
+	- The standard deviation of the measurements of fbodygyro on the x-axis
+- **fbodygyro_y.axis_std**
+	- The standard deviation of the measurements of fbodygyro on the y-axis
+- **fbodygyro_z.axis_std**
+	- The standard deviation of the measurements of fbodygyro on the z-axis
+- **fbodyaccmag_mean**
+	- The mean of the measurements of fbodyaccmag
+- **fbodyaccmag_std**
+	- The standard deviation of the measurements of fbodyaccmag
+- **fbodybodyaccjerkmag_mean**
+	- The mean of the measurements of fbodybodyaccjerkmag
+- **fbodybodyaccjerkmag_std**
+	- The standard deviation of the measurements of fbodybodyaccjerkmag
+- **fbodybodygyromag_mean**
+	- The mean of the measurements of fbodybodygyromag
+- **fbodybodygyromag_std**
+	- The standard deviation of the measurements of fbodybodygyromag
+- **fbodybodygyrojerkmag_mean**
+	- The mean of the measurements of fbodybodygyrojerkmag
+- **fbodybodygyrojerkmag_std**
+	- The standard deviation of the measurements of fbodybodygyrojerkmag
