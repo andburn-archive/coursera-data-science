@@ -1,7 +1,9 @@
 # data files assumed to be in the subdirectory 'data' 
 # of the directory containing the script
-# SCC <- readRDS("data/Source_Classification_Code.rds")
-# NEI <- readRDS("data/summarySCC_PM25.rds")
+SCC <- readRDS("data/Source_Classification_Code.rds")
+NEI <- readRDS("data/summarySCC_PM25.rds")
+
+png(filename = "plot6.png", width = 520, height = 520)
 
 bl <- subset(NEI, fips == "24510")
 la <- subset(NEI, fips == "06037")
@@ -32,3 +34,5 @@ legend("center",
        legend = c("LA County", "Baltimore City"),
        col = c("black","blue"),
        lwd = 1)
+
+dev.off()
