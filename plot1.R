@@ -1,8 +1,10 @@
-#SCC <- readRDS("data/Source_Classification_Code.rds")
-#NEI <- readRDS("data/summarySCC_PM25.rds")
+# data files assumed to be in the subdirectory 'data' 
+# of the directory containing the script
+SCC <- readRDS("data/Source_Classification_Code.rds")
+NEI <- readRDS("data/summarySCC_PM25.rds")
 
 # plot 1 (total)
-par(mar=c(5,6,4,2))
+par(mar=c(5,5,4,2))
 sumyr <- tapply(NEI$Emissions, NEI$year, sum)
 sumdf <- data.frame(year=names(sumyr), total=sumyr/1000000, stringsAsFactors=FALSE)
 plot(sumdf$year, sumdf$total, type="o", pch=16,
