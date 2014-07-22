@@ -1,0 +1,15 @@
+# Data files
+.RData
+data/
+
+# History files
+.Rhistory
+
+# R data files from past sessions
+.Rdata
+.Rproj.user
+
+# HTML files
+*.html
+*.htm
+*notes*
