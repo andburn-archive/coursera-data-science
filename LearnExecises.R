@@ -26,8 +26,14 @@ nonNACols <- unname(sapply(training, function(x){ sum(is.na(x)) <= 0 }))
 
 training <- training[,nonNACols]
 
-#fitModel <- train(classe ~ ., data=training, method="rf")
+training <- training[,!grepl("#DIV", training)]
+
+training$classe <- as.factor(training$classe)
+training$user_name <- as.factor(training$user_name)
+training$new_window <- as.factor(training$new_window)
+
+smltraining <- training[createDataPartition(y=training$classe, p=0.05,list=FALSE),]
+fitModel <- train(classe ~ ., data=training, method="rf")
+fitModel$results$Accuracy
 
 #pp <- preProcess(trnums,method="pca",pcaComp=2)
-
-grep("DIV", training)
