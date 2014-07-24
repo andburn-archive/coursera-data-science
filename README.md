@@ -17,3 +17,6 @@ This project is an assignment as part of the Coursera [Practical Machine Learnin
 - It was then decided to try a Random Forest algorithm using *caret* the *rf* method. This proved to be a highly accurate algorithm for prediction. It is also a bonus that cross-validation is not needed to validate the model as it is done internally.
 
 ## Model Testing and Validation
+- The reported accuracy on the training set was 99%
+- Using the model to predict on the testing set verified this with an accuracy of 99%
+- The validation set produced 100% accuracy upon submitting the results online
