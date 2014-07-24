@@ -32,8 +32,12 @@ training$classe <- as.factor(training$classe)
 training$user_name <- as.factor(training$user_name)
 training$new_window <- as.factor(training$new_window)
 
-smltraining <- training[createDataPartition(y=training$classe, p=0.05,list=FALSE),]
 fitModel <- train(classe ~ ., data=training, method="rf")
-fitModel$results$Accuracy
+trainAccuracy <- fitModel$results$Accuracy[1]
 
-#pp <- preProcess(trnums,method="pca",pcaComp=2)
+predictTest <- predict(fitModel, newdata=testing)
+testAccuracy <- sum(testing$classe == prf)/length(testing$classe)
+
+submissionPrediction <- predict(fitModel, newdata=validate)
+
+
